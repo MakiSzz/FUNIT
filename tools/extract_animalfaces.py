@@ -22,7 +22,7 @@ with open(COOR_FILE, 'rt') as f:
 
 for l in lines:
     ls = l.strip().split(' ')
-    t = ls[0][10:]
+    t = 'animalface/'+ls[0][10:]
     img_name = os.path.join(IMAGENET_TRAIN, t)
     img = Image.open(img_name)
     img = img.convert('RGB')
