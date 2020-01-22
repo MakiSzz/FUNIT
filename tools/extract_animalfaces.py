@@ -22,8 +22,8 @@ with open(COOR_FILE, 'rt') as f:
 
 for l in lines:
     ls = l.strip().split(' ')
-    t[0] = ls[0][10:]
-    img_name = os.path.join(IMAGENET_TRAIN, t[0])
+    t = ls[0][10:]
+    img_name = os.path.join(IMAGENET_TRAIN, t)
     img = Image.open(img_name)
     img = img.convert('RGB')
     x = int(ls[1])
