@@ -147,7 +147,7 @@ def get_train_loaders(conf):
 
 def get_config(config):
     with open(config, 'r') as stream:
-        return yaml.load(stream, Loader=yaml.FullLoader)
+        return yaml.load(stream)
 
 
 def make_result_folders(output_directory):
